@@ -1,7 +1,16 @@
 aid: hotmail
 name: Hotmail
-description: Hotmail is a company surfaced as a portfolio company of menlo-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Hotmail was one of the first free web-based email services, launched in 1996 by
+  Sabeer Bhatia and Jack Smith and among the earliest venture-backed consumer web
+  companies (funded by Draper Fisher Jurvetson and Menlo Ventures). Microsoft acquired
+  Hotmail in December 1997 and operated it as MSN Hotmail and later Windows Live
+  Hotmail. In 2013 Microsoft folded Hotmail into Outlook.com; hotmail.com mailboxes
+  remain fully active but are served by Outlook.com and Microsoft 365 infrastructure.
+  Hotmail exists today only as a legacy consumer email brand and domain, with no
+  standalone developer program. Programmatic access to hotmail.com mailboxes is
+  provided through Microsoft Graph (Outlook Mail) and the standard IMAP, POP, and
+  SMTP protocols, not a dedicated Hotmail API.
 url: https://raw.githubusercontent.com/api-evangelist/hotmail/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +18,49 @@ x-backed-by:
 - menlo-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: microsoft
+x-successor: outlook.com
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Email
+- Webmail
+- Consumer
+- Communication
+- Microsoft
+- Legacy
+- Messaging
+image: https://raw.githubusercontent.com/api-evangelist/hotmail/refs/heads/main/hotmail.png
 apis: []
+common:
+- type: DomainSecurity
+  url: security/hotmail-domain-security.yml
+- type: Website
+  url: https://hotmail.com
+- type: Successor
+  name: Outlook.com
+  url: https://outlook.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
